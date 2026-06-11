@@ -218,29 +218,6 @@ outlines:
         - ref: <mirror>matrix_ring_mod
           shift: [3U, 1U]
 
-  _top_extension_plate_right:
-    $extends: outlines._top_extension_plate_left
-    $args: [mirror_]
-  _top_extension_plate_left:
-    $params: [<mirror>]
-    $args: [""]
-    extension:
-      what: polygon
-      points:
-        # All based off of the matrix middle num key
-        # top left
-        - ref: <mirror>matrix_middle_num
-          shift: [-3U-0.5px, 0.5py]
-        # bottom left
-        - ref: <mirror>matrix_middle_num
-          shift: [-3U-0.5px, -0.5U]
-        # bottom right
-        - ref: <mirror>matrix_middle_num
-          shift: [2U+0.5px, -4.5U]
-        # top right
-        - ref: <mirror>matrix_middle_num
-          shift: [2U+0.5px, 0.5py]
-
   # Excludes the old MCU and RJ45 area
   _top_extension_right:
     $extends: outlines._top_extension_left
@@ -306,7 +283,7 @@ outlines:
       name: matrix_area_<side>
     top:
       what: outline
-      name: _top_extension_plate_<side>
+      name: _top_extension_<side>
     thumb:
       what: outline
       name: thumb_area_<side>
@@ -332,7 +309,7 @@ outlines:
       fillet: baseFillet
     top:
       what: outline
-      name: _top_extension_plate_left
+      name: _top_extension_left
       fillet: baseFillet
     thumb:
       what: outline
