@@ -300,8 +300,8 @@ outlines:
       name: plate_base_<side>
       expand: csMargin
 
-  # Plate do not need to be mirrored
-  # FR4 version. Screw holes added on PCB
+  # Plate does not need to be mirrored
+  # FR4 version.
   plate:
     matrix:
       what: outline
@@ -326,9 +326,9 @@ outlines:
       operation: subtract
 
 pcbs:
-  stm32_poc_right:
+  pando_right:
     $args: [right, "mirror_"]
-    $extends: pcbs.stm32_poc_left
+    $extends: pcbs.pando_left
     footprints:
       diode:
         adjust:
@@ -338,7 +338,7 @@ pcbs:
       j1:
         where: false
 
-  stm32_poc_left:
+  pando_left:
     $params: [<side>, <mirror>]
     $args: [left, ""]
     template: kicad8
@@ -413,3 +413,9 @@ pcbs:
           back: true
           width: 10.64
           height: 8.3
+
+  pando_plate:
+    template: kicad8
+    outlines:
+      main:
+        outline: plate
