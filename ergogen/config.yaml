@@ -435,7 +435,86 @@ pcbs:
           back: true
           width: 8.5
           height: 6
-
+      # MCU
+      u1:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-38.5, 3]
+        params:
+          designator: RST
+          description: "Swap with Package_QFP:LQFP-48_7x7mm_P0.5mm"
+          back: true
+          width: 10.3
+          height: 10.3
+      r1:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-58.25, -0.5]
+        params:
+          designator: R
+          description: "Swap with Resistor_SMD:R_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      r2:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-58.25, 1.25]
+        params:
+          designator: R
+          description: "Swap with Resistor_SMD:R_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      r3:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-17, 7.5]
+          rotate: 90
+        params:
+          designator: R
+          description: "Swap with Resistor_SMD:R_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      r4:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-17, 4.325]
+          rotate: 90
+        params:
+          designator: R
+          description: "Swap with Resistor_SMD:R_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      r5:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [33, 5.825]
+        params:
+          designator: R
+          description: "Swap with Resistor_SMD:R_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      r6:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [33, 4]
+        params:
+          designator: R
+          description: "Swap with Resistor_SMD:R_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
 
   pando_plate:
     template: kicad8
