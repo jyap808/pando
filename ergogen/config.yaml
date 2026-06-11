@@ -1,0 +1,438 @@
+meta:
+  engine: 4.1.0
+  name: Pando
+  author: Julian Yap
+  github: jyap808
+  version: v1.0.0
+  footer_text: &footer_text "Designed in Washington, USA - by jyap - v1.0"
+
+units:
+  # Proxy Spacing Variables
+  kx: U
+  ky: U
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+  # Defaults to M2 Screws
+  screwSize: 1.1
+  # M2 spacer size
+  spacerSize: 1.6
+  # Tooling size
+  toolingSize: 1.6
+  standoffHeight: 10
+  standoffCoverHeight: 25
+  baseFillet: 1.2
+  switchFillet: 0.5
+
+  csWall: 3.6              # Wall thickness
+  csMargin: 0.5            # PCB clearance
+  csLip: 3                 # Lip height above plate (7-8mm full coverage, 2-3mm floating)
+  csBottomZ: 2.5           # Bottom plate thickness
+  csWallZ: csLip + standoffHeight + csBottomZ      # Total wall height
+
+  csScrewSize: 1.6         # M3 screws
+  csSOSize: 2.7            # M3 round stand offs. 5mm OD
+  # Sandwich
+  csWallSW: 7              # Wall thickness
+  csFilletSW: 3            # Fillet
+
+points:
+  zones:
+    matrix:
+      key:
+        tags: ['key']
+      # Fix placement on KiCAD sheet.
+      anchor:
+        shift: [70, -190]
+      columns:
+        # Sofle v2/RGBv3 aggressive pinky stagger based
+        outer:
+          key.column_net: COL0
+          rows.mod.skip: true
+        pinky:
+          key.column_net: COL1
+          rows.mod.skip: true
+        ring:
+          key:
+            stagger: 9
+            column_net: COL2
+          rows.mod.column_net: COL1
+        middle:
+          key:
+            stagger: 2.5
+            column_net: COL3
+          rows.mod.column_net: COL2
+        index:
+          key:
+            stagger: -2.5
+            column_net: COL4
+          rows.mod:
+            skip: true
+            column_net: COL3
+          #rows.mod.skip: true
+          #rows.mod.column_net: COL3
+        inner:
+          key:
+            stagger: -2.5
+            column_net: COL5
+          rows.mod.skip: true
+      rows:
+        # Four main rows, one partial row.
+        # Ergogen uses Cartesian Coordinates as opposed to a keyboard matrix
+        mod:
+          row_net: ROW4
+        bottom:
+          row_net: ROW3
+        home:
+          row_net: ROW2
+        top:
+          row_net: ROW1
+        num:
+          row_net: ROW0
+    thumbs:
+      key:
+        tags: ['key']
+      anchor:
+        ref: matrix_index_bottom
+        shift: [0, -1U]
+      columns:
+        top:
+          key:
+            column_net: COL3
+        middle:
+          key:
+            width: 1.25U
+            origin: [-0.6U, -0.8U]
+            splay: -30
+            column_net: COL4
+        bottom:
+          key:
+            # (1.25+1)/2 - 1 = 0.125
+            shift: [0.125U, 0]
+            column_net: COL5
+      rows:
+        cluster:
+          row_net: ROW4
+  # TODO - Add mounts
+  mirror: &mirror
+    ref: matrix_inner_num
+    distance: 5kx
+
+outlines:
+  # outline with no padding
+  _raw:
+    - what: rectangle
+      where: /key/
+      size: [U,U]
+    - what: polygon
+      points:
+        - ref: thumbs_top_cluster
+          shift: [-0.5U, 0.5U]
+        - ref: thumbs_top_cluster
+          shift: [-0.5U, -0.5U]
+        - ref: thumbs_top_cluster
+          shift: [1U, -0.5U]
+        - ref: thumbs_top_cluster
+          shift: [1U, 0.5U]
+    - what: polygon
+      points:
+        # Extend Down
+        - ref: matrix_inner_bottom
+          shift: [-0.5U, 0.5U]
+        - ref: matrix_inner_bottom
+          shift: [-0.5U, -1U]
+        - ref: matrix_inner_bottom
+          shift: [0.5U, -1U]
+        - ref: matrix_inner_bottom
+          shift: [0.5U, 0.5U]
+    - what: polygon
+      points:
+        # Extend Left
+        - ref: thumbs_middle_cluster
+          shift: [-1U, 0.5U]
+        - ref: thumbs_middle_cluster
+          shift: [-1U, -0.5U]
+        - ref: thumbs_middle_cluster
+          shift: [1U, -0.5U]
+        - ref: thumbs_middle_cluster
+          shift: [1U, 0.5U]
+      fillet: baseFillet
+  keys:
+    - what: rectangle
+      where: /key/
+      size: [14,14]
+      fillet: switchFillet
+  combo_print:
+    # Used for printing out and testing layout
+    - name: _raw
+    - operation: subtract
+      name: keys
+
+  matrix_area_right:
+    $extends: outlines.matrix_area_left
+    $args: ["mirror_"]
+  matrix_area_left:
+    $params: [<mirror>]
+    $args: [""]
+    area:
+      what: rectangle
+      where:
+        - [/^<mirror>matrix_.*/]
+      size: [px, py]
+
+  thumb_area_right:
+    $extends: outlines.thumb_area_left
+    $args: [mirror_, right]
+  thumb_area_left:
+    $params: [<mirror>, <side>]
+    $args: ["", "left"]
+    cluster:
+      what: polygon
+      points:
+        # bottom middle
+        - ref: <mirror>thumbs_middle_cluster
+          shift: [-2U, -0.5py]
+        # bottom right
+        - ref: <mirror>thumbs_bottom_cluster
+          shift: [0.5px, -0.5py]
+        - ref: <mirror>thumbs_bottom_cluster
+          shift: [0.5px, 0.5py]
+        - ref: <mirror>thumbs_middle_cluster
+          shift: [-2U, 0.5py]
+
+  _bottom_extension_right:
+    $extends: outlines._bottom_extension_left
+    $args: [mirror_]
+  _bottom_extension_left:
+    $params: [<mirror>]
+    $args: [""]
+    extension:
+      what: polygon
+      points:
+        - ref: <mirror>matrix_ring_mod
+          shift: [0, 1U]
+        - ref: <mirror>matrix_ring_mod
+          shift: [0, -0.5py]
+        - ref: <mirror>matrix_ring_mod
+          shift: [3U, -0.5py]
+        - ref: <mirror>matrix_ring_mod
+          shift: [3U, 1U]
+
+  _top_extension_plate_right:
+    $extends: outlines._top_extension_plate_left
+    $args: [mirror_]
+  _top_extension_plate_left:
+    $params: [<mirror>]
+    $args: [""]
+    extension:
+      what: polygon
+      points:
+        # All based off of the matrix middle num key
+        # top left
+        - ref: <mirror>matrix_middle_num
+          shift: [-3U-0.5px, 0.5py]
+        # bottom left
+        - ref: <mirror>matrix_middle_num
+          shift: [-3U-0.5px, -0.5U]
+        # bottom right
+        - ref: <mirror>matrix_middle_num
+          shift: [2U+0.5px, -4.5U]
+        # top right
+        - ref: <mirror>matrix_middle_num
+          shift: [2U+0.5px, 0.5py]
+
+  # Excludes the old MCU and RJ45 area
+  _top_extension_right:
+    $extends: outlines._top_extension_left
+    $args: [mirror_]
+  _top_extension_left:
+    $params: [<mirror>]
+    $args: [""]
+    extension:
+      what: polygon
+      points:
+        # All based off of the matrix middle num key
+        # top left
+        - ref: <mirror>matrix_middle_num
+          shift: [-3U-0.493px, 0.5py]
+        # bottom left
+        - ref: <mirror>matrix_middle_num
+          shift: [-3U-0.493px, -0.5U]
+        # bottom right
+        - ref: <mirror>matrix_middle_num
+          shift: [2U+0.495px, -4.5U]
+        # top right
+        - ref: <mirror>matrix_middle_num
+          shift: [2U+0.495px, 0.5py]
+
+  # PCB Base outline with no fillets
+  pcb_base_right:
+    $extends: outlines.pcb_base_left
+    $args: [right]
+  pcb_base_left:
+    $params: [<side>]
+    $args: [left]
+    matrix:
+      what: outline
+      name: matrix_area_<side>
+    top:
+      what: outline
+      name: _top_extension_<side>
+    thumb:
+      what: outline
+      name: thumb_area_<side>
+    bottom:
+      what: outline
+      name: _bottom_extension_<side>
+  
+  pcb_right:
+    $extends: outlines.pcb_left
+    $args: [right]
+  pcb_left:
+    $params: [<side>]
+    $args: [left]
+    expand1:
+      what: outline
+      name: pcb_base_<side>
+      expand: 0
+      fillet: baseFillet
+
+  # Plate Base outline with no fillets and no switch cut outs
+  plate_base_left:
+    $params: [<side>]
+    $args: [left]
+    matrix:
+      what: outline
+      name: matrix_area_<side>
+    top:
+      what: outline
+      name: _top_extension_plate_<side>
+    thumb:
+      what: outline
+      name: thumb_area_<side>
+    bottom:
+      what: outline
+      name: _bottom_extension_<side>
+
+  # Expanded plate to subtract for lip
+  _plate_base_expanded_left:
+    $params: [<side>]
+    $args: [left]
+    expand1:
+      what: outline
+      name: plate_base_<side>
+      expand: csMargin
+
+  # Plate do not need to be mirrored
+  # FR4 version. Screw holes added on PCB
+  plate:
+    matrix:
+      what: outline
+      name: matrix_area_left
+      fillet: baseFillet
+    top:
+      what: outline
+      name: _top_extension_plate_left
+      fillet: baseFillet
+    thumb:
+      what: outline
+      name: thumb_area_left
+      fillet: baseFillet
+    bottom:
+      what: outline
+      name: _bottom_extension_left
+    switch:
+      what: rectangle
+      size: [14,14]
+      fillet: switchFillet
+      where: /key/
+      operation: subtract
+
+pcbs:
+  stm32_poc_right:
+    $args: [right, "mirror_"]
+    $extends: pcbs.stm32_poc_left
+    footprints:
+      diode:
+        adjust:
+          rotate: 90
+          shift: [7.45, 1]
+      # Since there is no main USBC needed, the USBC interconnect becomes reference J1
+      j1:
+        where: false
+
+  stm32_poc_left:
+    $params: [<side>, <mirror>]
+    $args: [left, ""]
+    template: kicad8
+    outlines:
+      main:
+        outline: pcb_<side>
+    footprints:
+      mx:
+        what: ceoloide/switch_mx
+        where:
+          -
+            - /^<mirror>(matrix|thumbs)_.*/
+        adjust:
+          rotate: 180
+        params:
+          designator: MX
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          include_corner_marks: true
+          solder: false
+          hotswap: true
+          reversible: false
+          include_keycap: true
+      diode:
+        what: ceoloide/diode_tht_sod123
+        where:
+          -
+            - /^<mirror>(matrix|thumbs)_.*/
+        adjust:
+          shift: [-7.45, 1]
+          rotate: -90
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+          reversible: false
+      text:
+        what: ceoloide/utility_text
+        where:
+          -
+            - /^<mirror>matrix_index_num$/
+        params:
+          reversible: true
+          bold: true
+          italic: true
+          text: Pando
+          face: IBM Plex Mono
+          width: 3
+          height: 3
+        adjust:
+          shift: [0, 0.5U]
+      j1:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-3.15U, 8.175] # USBC port courtyard extends out 1.8mm.
+        params:
+          designator: J
+          description: "Swap with PCM_marbastlib-various:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+          back: true
+          width: 10.64
+          height: 8.3
+      j2:
+        what: placeholder
+        where:
+          -
+            - /^<mirror>matrix_middle_num$/
+        adjust:
+          shift: [2.15U, 8.175] # USBC port courtyard extends out 1.8mm.
+        params:
+          designator: J
+          description: "Swap with PCM_marbastlib-various:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+          back: true
+          width: 10.64
+          height: 8.3
