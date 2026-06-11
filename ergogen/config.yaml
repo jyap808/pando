@@ -413,6 +413,29 @@ pcbs:
           back: true
           width: 10.64
           height: 8.3
+      boot1:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-12, 7.5]
+        params:
+          designator: BOOT
+          description: "Swap with Button_Switch_SMD:SW_SPST_TL3342"
+          back: true
+          width: 8.5
+          height: 6
+      rst1:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-22.5, 7.5]
+        params:
+          designator: RST
+          description: "Swap with Button_Switch_SMD:SW_SPST_TL3342"
+          back: true
+          width: 8.5
+          height: 6
+
 
   pando_plate:
     template: kicad8
