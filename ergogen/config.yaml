@@ -442,11 +442,45 @@ pcbs:
         adjust:
           shift: [-38.5, 3]
         params:
-          designator: RST
+          designator: U
           description: "Swap with Package_QFP:LQFP-48_7x7mm_P0.5mm"
           back: true
           width: 10.3
           height: 10.3
+      u2:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-62, -0.75]
+        params:
+          designator: U
+          description: "Swap with Package_TO_SOT_SMD:SOT-143"
+          back: true
+          width: 3.2
+          height: 3.4
+      u3:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-49, 3.75]
+          rotate: -90
+        params:
+          designator: U
+          description: "Swap with Package_TO_SOT_SMD:SOT-23-3"
+          back: true
+          width: 4.1
+          height: 3.4
+      u4:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [41.5, -0.25]
+        params:
+          designator: U
+          description: "Swap with Package_TO_SOT_SMD:SOT-143"
+          back: true
+          width: 3.2
+          height: 3.4
       r1:
         what: placeholder
         where: matrix_middle_num
@@ -474,7 +508,7 @@ pcbs:
         where: matrix_middle_num
         adjust:
           shift: [-17, 7.5]
-          rotate: 90
+          rotate: -90
         params:
           designator: R
           description: "Swap with Resistor_SMD:R_0603_1608Metric"
@@ -486,7 +520,7 @@ pcbs:
         where: matrix_middle_num
         adjust:
           shift: [-17, 4.325]
-          rotate: 90
+          rotate: -90
         params:
           designator: R
           description: "Swap with Resistor_SMD:R_0603_1608Metric"
@@ -515,6 +549,51 @@ pcbs:
           back: true
           width: 2.96
           height: 1.46
+      r7:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-31.25, -3]
+        params:
+          designator: R
+          description: "Swap with Resistor_SMD:R_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      r8:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-31.25, -1.25]
+        params:
+          designator: R
+          description: "Swap with Resistor_SMD:R_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      f1:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-62, -4]
+        params:
+          designator: F
+          description: "Swap with Fuse:Fuse_1206_3216Metric"
+          back: true
+          width: 4.56
+          height: 2.26
+      f2:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [45.75, -1.25]
+          rotate: -90
+        params:
+          designator: F
+          description: "Swap with Fuse:Fuse_1206_3216Metric"
+          back: true
+          width: 4.56
+          height: 2.26
 
   pando_plate:
     template: kicad8
