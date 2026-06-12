@@ -594,6 +594,138 @@ pcbs:
           back: true
           width: 4.56
           height: 2.26
+      c1:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-27.5, 7.275]
+          rotate: -90
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c2:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-46, 6]
+          rotate: 90
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c3:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-43, 8]
+          rotate: 90
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c4:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-43.5, -2]
+          rotate: 180
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c5:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-33.5, 8]
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c6:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-31, 7]
+          rotate: 90
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c7:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-32.5, 2]
+          rotate: 90
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c8:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-58, -3.5]
+          rotate: 90
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c9:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-51, 0.5]
+          rotate: 180
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c10:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [-46, 2.5]
+          rotate: -90
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+      c11:
+        what: placeholder
+        where: matrix_middle_num
+        adjust:
+          shift: [41.5, -2.75]
+          rotate: 180
+        params:
+          designator: C
+          description: "Swap with Capacitor_SMD:C_0603_1608Metric"
+          back: true
+          width: 2.96
+          height: 1.46
+
 
   pando_plate:
     template: kicad8
