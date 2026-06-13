@@ -334,6 +334,9 @@ pcbs:
         adjust:
           rotate: 90
           shift: [7.45, 1]
+      text_side:
+        params:
+          text: RIGHT PCB
       # Since there is no main USBC needed, the USBC interconnect becomes reference J1
       j1:
         where: false
@@ -461,7 +464,8 @@ pcbs:
           -
             - /^<mirror>matrix_index_num$/
         params:
-          reversible: true
+          side: B
+          mirrored: true
           bold: true
           italic: true
           text: Pando
@@ -470,6 +474,40 @@ pcbs:
           height: 3
         adjust:
           shift: [0, 0.5U]
+      text_footer:
+        what: ceoloide/utility_text
+        where:
+          -
+            - /^<mirror>matrix_ring_mod$/
+        params:
+          side: B
+          mirrored: true
+          face: IBM Plex Mono
+          text: *footer_text
+        adjust:
+          shift: [1U, -0.45U]
+      text_side:
+        what: ceoloide/utility_text
+        where:
+          -
+            - /^<mirror>matrix_middle_num$/
+        params:
+          side: B
+          mirrored: true
+          text: LEFT PCB
+          face: IBM Plex Mono
+        adjust:
+          shift: [47.5, 5]
+          rotate: 90
+      logo:
+        what: pando_logo
+        where:
+          -
+            - /^<mirror>matrix_middle_mod$/
+        params:
+          side: B
+        adjust:
+          shift: [33, -1]
       j1:
         what: placeholder
         where: matrix_middle_num
