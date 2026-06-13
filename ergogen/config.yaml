@@ -337,6 +337,87 @@ pcbs:
       # Since there is no main USBC needed, the USBC interconnect becomes reference J1
       j1:
         where: false
+      # The interconnect fuse becomes reference F1
+      f1:
+        where: mirror_matrix_middle_num
+        adjust:
+          shift: [44.092, 0.17]
+      f2:
+        where: false
+      # IO Expander
+      u1:
+        where: mirror_matrix_middle_num
+        adjust:
+          shift: [-47.408, 3.32]
+        params:
+          description: "Swap with Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
+          width: 7.7
+          height: 8.3
+      u2:
+        where: mirror_matrix_middle_num
+        adjust:
+          shift: [38.592, 0.17]
+          rotate: -90
+        params:
+          description: "Swap with Package_TO_SOT_SMD:SOT-143"
+          width: 3.2
+          height: 3.4
+      c1:
+        where: mirror_matrix_middle_num
+        adjust:
+          shift: [35.092, 0.17]
+          rotate: 90
+      r1:
+        where: mirror_matrix_middle_num
+        adjust:
+          shift: [33.342, 5.42]
+          rotate: 180
+      r2:
+        where: mirror_matrix_middle_num
+        adjust:
+          shift: [33.342, 3.67]
+          rotate: 180
+      # Removals
+      rst1:
+        where: false
+      boot1:
+        where: false
+      c2:
+        where: false
+      c3:
+        where: false
+      c4:
+        where: false
+      c5:
+        where: false
+      c6:
+        where: false
+      c7:
+        where: false
+      c8:
+        where: false
+      c9:
+        where: false
+      c10:
+        where: false
+      c11:
+        where: false
+      r3:
+        where: false
+      r4:
+        where: false
+      r5:
+        where: false
+      r6:
+        where: false
+      r7:
+        where: false
+      r8:
+        where: false
+      u3:
+        where: false
+      u4:
+        where: false
 
   pando_left:
     $params: [<side>, <mirror>]
