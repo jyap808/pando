@@ -113,6 +113,27 @@ points:
       rows:
         cluster:
           row_net: ROW4
+    # Mounts - Inner
+    mount_inner_top_left:
+      anchor:
+        ref: matrix_outer_top
+        shift: [0.5kx, 0.5ky]
+    mount_inner_bottom_left:
+      anchor:
+        ref: matrix_outer_bottom
+        shift: [0.5kx, 0.5ky]
+    mount_inner_top_right:
+      anchor:
+        ref: matrix_inner_top
+        shift: [-0.5kx, 0.55ky]
+    mount_inner_bottom_middle:
+      anchor:
+        ref: thumbs_top_cluster
+        shift: [-0.5kx, 0.55ky]
+    mount_inner_bottom_right:
+      anchor:
+        ref: thumbs_bottom_cluster
+        shift: [-0.55kx, 0.3ky]
   # TODO - Add mounts
   mirror: &mirror
     ref: matrix_inner_num
@@ -844,7 +865,14 @@ pcbs:
           back: true
           width: 2.96
           height: 1.46
-
+      mount_inner:
+        what: ceoloide/mounting_hole_plated
+        where:
+          - [/^<mirror>mount_inner_.*/]
+        params:
+          drill: 2.9 # Specs say 2.8
+          side: B
+          outline: 0.75
 
   pando_plate:
     template: kicad8
