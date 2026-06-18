@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Julian Yap
+# SPDX-License-Identifier: CERN-OHL-S-2.0+
+
 meta:
   engine: 4.1.0
   name: Pando
@@ -134,7 +137,27 @@ points:
       anchor:
         ref: thumbs_bottom_cluster
         shift: [-0.55kx, 0.3ky]
-  # TODO - Add mounts
+    # Mounts - Sandwich Outer
+    mount_sw_outer_top_left:
+      anchor:
+        ref: matrix_outer_num
+        shift: [-0.5kx-csWallSW/2-csMargin, 1.3ky]
+    mount_sw_outer_top_right:
+      anchor:
+        ref: matrix_middle_num
+        shift: [2.7kx, 0.5ky+csMargin+csWallSW/2+0.5]
+    mount_sw_outer_bottom_left:
+      anchor:
+        ref: matrix_outer_bottom
+        shift: [-0.5kx-csWallSW/2-csMargin, -0.5ky-csWallSW/2-csMargin]
+    mount_sw_outer_bottom_middle:
+      anchor:
+        ref: thumbs_top_cluster
+        shift: [-0.5kx, -0.5ky-csMargin-csWallSW/2-1]
+    mount_sw_outer_bottom_right:
+      anchor:
+        ref: thumbs_bottom_cluster
+        shift: [-0.55kx, 0.5ky+csMargin+csWallSW/2+1]
   mirror: &mirror
     ref: matrix_inner_num
     distance: 5kx
@@ -344,6 +367,80 @@ outlines:
       size: [14,14]
       fillet: switchFillet
       where: /key/
+      operation: subtract
+
+  # 3D printed case - Dedicated left and right sides
+  # In theory we can mirror this in the slicer
+  case_outer_right:
+    $args: [right]
+    $extends: outlines.case_outer_left
+  # Couldn't get extends to work here
+  case_outer_left:
+    $params: [<side>]
+    $args: [left]
+    expand1:
+      what: outline
+      name: pcb_<side>
+      expand: csMargin+csWall
+
+  case_inner_right:
+    $args: [right]
+    $extends: outlines.case_inner_left
+  # Couldn't get extends to work here
+  case_inner_left:
+    $params: [<side>]
+    $args: [left]
+    expand1:
+      what: outline
+      name: pcb_<side>
+      expand: csMargin
+
+  # Non-FR4 version with M2 screw mounts
+  _mounts_right:
+    $extends: outlines._mounts_left
+    $args: [mirror_, right]
+  _mounts_left:
+    $params: [<mirror>, <side>]
+    $args: ["", left]
+    mount_inner:
+      what: circle
+      radius: screwSize
+      where:
+        - [/^<mirror>mount_inner_.*/]
+
+  # Sandwich case
+  _mounts_sw_right:
+    $extends: outlines._mounts_sw_left
+    $args: [mirror_, right]
+  _mounts_sw_left:
+    $params: [<mirror>, <side>]
+    $args: ["", left]
+    mount_sw:
+      what: circle
+      radius: csScrewSize
+      where:
+        - [/^<mirror>mount_sw_.*/]
+
+  case_sw_outer_right:
+    $extends: outlines.case_sw_outer_left
+    $args: [right]
+  # Couldn't get extends to work here
+  case_sw_outer_left:
+    $params: [<side>]
+    $args: [left]
+    expand1:
+      what: outline
+      name: pcb_base_<side>
+      joints: pointy
+      expand: csMargin+csWallSW
+      fillet: csFilletSW
+    mounts:
+      what: outline
+      name: _mounts_<side>
+      operation: subtract
+    mounts_sw:
+      what: outline
+      name: _mounts_sw_<side>
       operation: subtract
 
 pcbs:
