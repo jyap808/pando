@@ -275,16 +275,16 @@ outlines:
         # All based off of the matrix middle num key
         # top left
         - ref: <mirror>matrix_middle_num
-          shift: [-3U-0.493px, 0.5py]
+          shift: [-67.525, 0.5py]
         # bottom left
         - ref: <mirror>matrix_middle_num
-          shift: [-3U-0.493px, -0.5U]
+          shift: [-67.525, -0.5U]
         # bottom right
         - ref: <mirror>matrix_middle_num
-          shift: [2U+0.495px, -4.5U]
+          shift: [48.525, -4.5U]
         # top right
         - ref: <mirror>matrix_middle_num
-          shift: [2U+0.495px, 0.5py]
+          shift: [48.525, 0.5py]
 
   # PCB Base outline with no fillets
   pcb_base_right:
