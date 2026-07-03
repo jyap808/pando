@@ -6,8 +6,8 @@ meta:
   name: Pando
   author: Julian Yap
   github: jyap808
-  version: v1.0.0
-  footer_text: &footer_text "Designed in Washington, USA - by jyap - v1.0"
+  version: v1.1.0
+  footer_text: &footer_text "Designed in Washington, USA - by jyap - v1.1"
 
 units:
   # Proxy Spacing Variables
