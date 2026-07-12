@@ -699,7 +699,7 @@
         "uuid": "ed461b4e-82d7-439c-8b6c-f2725ca96a6c"
       }
     ],
-    "used_designators": "D7-36,MX7-36,#PWR26-28",
+    "used_designators": "#PWR26-38,C5-7,C12-15,D7-36,U5,MX7-36,R9-10",
     "variants": []
   },
   "sheets": [
