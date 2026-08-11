@@ -27,8 +27,8 @@ units:
   baseFillet: 1.2
   switchFillet: 0.5
 
-  csWall: 3.6              # Wall thickness
-  csMargin: 0.5            # PCB clearance
+  csWall: 3                # Wall thickness
+  csMargin: 0.4            # PCB clearance. 0.5mm for FDM, 0.3mm for MJF are safe margins.
   csLip: 3                 # Lip height above plate (7-8mm full coverage, 2-3mm floating)
   csBottomZ: 2.5           # Bottom plate thickness
   csWallZ: csLip + standoffHeight + csBottomZ      # Total wall height
@@ -212,10 +212,10 @@ outlines:
     - operation: subtract
       name: keys
 
-  matrix_area_right:
-    $extends: outlines.matrix_area_left
+  _matrix_area_right:
+    $extends: outlines._matrix_area_left
     $args: ["mirror_"]
-  matrix_area_left:
+  _matrix_area_left:
     $params: [<mirror>]
     $args: [""]
     area:
@@ -224,10 +224,10 @@ outlines:
         - [/^<mirror>matrix_.*/]
       size: [px, py]
 
-  thumb_area_right:
-    $extends: outlines.thumb_area_left
+  _thumb_area_right:
+    $extends: outlines._thumb_area_left
     $args: [mirror_, right]
-  thumb_area_left:
+  _thumb_area_left:
     $params: [<mirror>, <side>]
     $args: ["", "left"]
     cluster:
@@ -295,13 +295,13 @@ outlines:
     $args: [left]
     matrix:
       what: outline
-      name: matrix_area_<side>
+      name: _matrix_area_<side>
     top:
       what: outline
       name: _top_extension_<side>
     thumb:
       what: outline
-      name: thumb_area_<side>
+      name: _thumb_area_<side>
     bottom:
       what: outline
       name: _bottom_extension_<side>
@@ -324,13 +324,13 @@ outlines:
     $args: [left]
     matrix:
       what: outline
-      name: matrix_area_<side>
+      name: _matrix_area_<side>
     top:
       what: outline
       name: _top_extension_<side>
     thumb:
       what: outline
-      name: thumb_area_<side>
+      name: _thumb_area_<side>
     bottom:
       what: outline
       name: _bottom_extension_<side>
@@ -349,7 +349,7 @@ outlines:
   plate:
     matrix:
       what: outline
-      name: matrix_area_left
+      name: _matrix_area_left
       fillet: baseFillet
     top:
       what: outline
@@ -357,7 +357,7 @@ outlines:
       fillet: baseFillet
     thumb:
       what: outline
-      name: thumb_area_left
+      name: _thumb_area_left
       fillet: baseFillet
     bottom:
       what: outline
@@ -441,6 +441,29 @@ outlines:
     mounts_sw:
       what: outline
       name: _mounts_sw_<side>
+      operation: subtract
+
+  # Bottom weight does not need to be mirrored
+  # Metal version.
+  bottom_weight:
+    matrix:
+      what: outline
+      name: _matrix_area_left
+      fillet: baseFillet
+    top:
+      what: outline
+      name: _top_extension_left
+      fillet: baseFillet
+    thumb:
+      what: outline
+      name: _thumb_area_left
+      fillet: baseFillet
+    bottom:
+      what: outline
+      name: _bottom_extension_left
+    mounts:
+      what: outline
+      name: _mounts_left
       operation: subtract
 
 pcbs:
