@@ -286,11 +286,12 @@ outlines:
         - ref: <mirror>matrix_middle_num
           shift: [48.525, 0.5py]
 
-  # PCB Base outline with no fillets
-  pcb_base_right:
-    $extends: outlines.pcb_base_left
+  # Base outline with no fillets and no switch cut outs
+  # Combining the matrix, thumb and extension areas
+  base_outline_right:
+    $extends: outlines.base_outline_left
     $args: [right]
-  pcb_base_left:
+  base_outline_left:
     $params: [<side>]
     $args: [left]
     matrix:
@@ -314,35 +315,9 @@ outlines:
     $args: [left]
     expand1:
       what: outline
-      name: pcb_base_<side>
+      name: base_outline_<side>
       expand: 0
       fillet: baseFillet
-
-  # Plate Base outline with no fillets and no switch cut outs
-  plate_base_left:
-    $params: [<side>]
-    $args: [left]
-    matrix:
-      what: outline
-      name: _matrix_area_<side>
-    top:
-      what: outline
-      name: _top_extension_<side>
-    thumb:
-      what: outline
-      name: _thumb_area_<side>
-    bottom:
-      what: outline
-      name: _bottom_extension_<side>
-
-  # Expanded plate to subtract for lip
-  _plate_base_expanded_left:
-    $params: [<side>]
-    $args: [left]
-    expand1:
-      what: outline
-      name: plate_base_<side>
-      expand: csMargin
 
   # Plate does not need to be mirrored
   # FR4 version.
@@ -430,7 +405,7 @@ outlines:
     $args: [left]
     expand1:
       what: outline
-      name: pcb_base_<side>
+      name: base_outline_<side>
       joints: pointy
       expand: csMargin+csWallSW
       fillet: csFilletSW
