@@ -18,26 +18,13 @@ units:
   py: ky + 2
   # Defaults to M2 Screws
   screwSize: 1.1
-  # M2 spacer size
-  spacerSize: 1.6
-  # Tooling size
-  toolingSize: 1.6
-  standoffHeight: 10
-  standoffCoverHeight: 25
   baseFillet: 1.2
   switchFillet: 0.5
 
   csWall: 3                # Wall thickness
+  csWallThin: 2.8
   csMargin: 0.4            # PCB clearance. 0.5mm for FDM, 0.3mm for MJF are safe margins.
-  csLip: 3                 # Lip height above plate (7-8mm full coverage, 2-3mm floating)
-  csBottomZ: 2.5           # Bottom plate thickness
-  csWallZ: csLip + standoffHeight + csBottomZ      # Total wall height
-
-  csScrewSize: 1.6         # M3 screws
-  csSOSize: 2.7            # M3 round stand offs. 5mm OD
-  # Sandwich
-  csWallSW: 7              # Wall thickness
-  csFilletSW: 3            # Fillet
+  csMarginThin: 0.3
 
 points:
   zones:
@@ -137,27 +124,6 @@ points:
       anchor:
         ref: thumbs_bottom_cluster
         shift: [-0.55kx, 0.3ky]
-    # Mounts - Sandwich Outer
-    mount_sw_outer_top_left:
-      anchor:
-        ref: matrix_outer_num
-        shift: [-0.5kx-csWallSW/2-csMargin, 1.3ky]
-    mount_sw_outer_top_right:
-      anchor:
-        ref: matrix_middle_num
-        shift: [2.7kx, 0.5ky+csMargin+csWallSW/2+0.5]
-    mount_sw_outer_bottom_left:
-      anchor:
-        ref: matrix_outer_bottom
-        shift: [-0.5kx-csWallSW/2-csMargin, -0.5ky-csWallSW/2-csMargin]
-    mount_sw_outer_bottom_middle:
-      anchor:
-        ref: thumbs_top_cluster
-        shift: [-0.5kx, -0.5ky-csMargin-csWallSW/2-1]
-    mount_sw_outer_bottom_right:
-      anchor:
-        ref: thumbs_bottom_cluster
-        shift: [-0.55kx, 0.5ky+csMargin+csWallSW/2+1]
   mirror: &mirror
     ref: matrix_inner_num
     distance: 5kx
@@ -344,8 +310,7 @@ outlines:
       where: /key/
       operation: subtract
 
-  # 3D printed case - Dedicated left and right sides
-  # In theory we can mirror this in the slicer
+  # 3D printed case
   case_outer_right:
     $args: [right]
     $extends: outlines.case_outer_left
@@ -357,6 +322,33 @@ outlines:
       what: outline
       name: pcb_<side>
       expand: csMargin+csWall
+
+  # MJF Brutalist design
+  # Beveled joints, thinner wall
+  case_outer_mjf_right:
+    $args: [right]
+    $extends: outlines.case_outer_mjf_left
+  # Couldn't get extends to work here
+  case_outer_mjf_left:
+    $params: [<side>]
+    $args: [left]
+    expand1:
+      what: outline
+      name: base_outline_<side>
+      expand: csMarginThin+csWall
+      joints: beveled
+
+  case_inner_mjf_right:
+    $args: [right]
+    $extends: outlines.case_inner_mjf_left
+  # Couldn't get extends to work here
+  case_inner_mjf_left:
+    $params: [<side>]
+    $args: [left]
+    expand1:
+      what: outline
+      name: pcb_<side>
+      expand: csMarginThin
 
   case_inner_right:
     $args: [right]
@@ -382,41 +374,6 @@ outlines:
       radius: screwSize
       where:
         - [/^<mirror>mount_inner_.*/]
-
-  # Sandwich case
-  _mounts_sw_right:
-    $extends: outlines._mounts_sw_left
-    $args: [mirror_, right]
-  _mounts_sw_left:
-    $params: [<mirror>, <side>]
-    $args: ["", left]
-    mount_sw:
-      what: circle
-      radius: csScrewSize
-      where:
-        - [/^<mirror>mount_sw_.*/]
-
-  case_sw_outer_right:
-    $extends: outlines.case_sw_outer_left
-    $args: [right]
-  # Couldn't get extends to work here
-  case_sw_outer_left:
-    $params: [<side>]
-    $args: [left]
-    expand1:
-      what: outline
-      name: base_outline_<side>
-      joints: pointy
-      expand: csMargin+csWallSW
-      fillet: csFilletSW
-    mounts:
-      what: outline
-      name: _mounts_<side>
-      operation: subtract
-    mounts_sw:
-      what: outline
-      name: _mounts_sw_<side>
-      operation: subtract
 
   # Bottom weight does not need to be mirrored
   # Metal version.
