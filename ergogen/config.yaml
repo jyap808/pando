@@ -23,7 +23,7 @@ units:
 
   csWall: 3                # Wall thickness
   csWallThin: 2.8
-  csMargin: 0.4            # PCB clearance. 0.5mm for FDM, 0.3mm for MJF are safe margins.
+  csMargin: 0.5            # PCB clearance. 0.5mm for FDM, 0.3mm for MJF are safe margins.
   csMarginThin: 0.3
 
 points:
