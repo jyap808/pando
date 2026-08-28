@@ -13,6 +13,9 @@ devenv.local.yaml
 node_modules
 ergogen/output
 
+# Zensical build output
+site
+
 # KiCad
 *.kicad_pcb-bak
 *.kicad_sch-bak

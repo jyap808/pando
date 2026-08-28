@@ -1,0 +1,64 @@
+[project]
+site_name = "Pando"
+site_url = "https://jyap808.github.io/pando/"
+site_description = "Pando is a split keyboard PCB on the STM32 platform."
+site_author = "Julian Yap"
+docs_dir = "docs"
+site_dir = "site"
+copyright = "&copy; 2026 <a href=\"https://julianyap.com\">Julian Yap</a>"
+
+[project.extra]
+generator = false
+
+nav = [
+  { "Home" = "index.md" },
+  { "Features" = "features.md" },
+  { "Build Guide" = [
+    "build/installation.md",
+    "build/keycap-options.md",
+    "build/ibom.md",
+  ] },
+  { "Hardware" = [
+    "hardware/overview.md",
+    "hardware/components.md",
+    "hardware/footprints.md",
+  ] },
+  { "Firmware and Configuration" = [
+    "firmware/index.md",
+    "firmware/installing-firmware.md",
+  ] },
+]
+
+[project.theme]
+variant = "modern"
+logo = "assets/images/pando_logo_256.png"
+favicon = "assets/images/pando_logo_256.png"
+features = [
+  "navigation.instant",
+  "navigation.tracking",
+  "navigation.tabs",
+  "navigation.sections",
+  "navigation.expand",
+  "navigation.top",
+  "toc.follow",
+  "content.code.copy",
+]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+scheme = "default"
+primary = "blue"
+accent = "blue"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+scheme = "slate"
+primary = "blue"
+accent = "blue"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
