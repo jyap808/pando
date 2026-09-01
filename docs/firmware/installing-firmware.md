@@ -1,6 +1,7 @@
 # Installing Firmware
 
-> **Note:** Pando is a split keyboard with an MCU on the master half only. The secondary half uses an I/O expander over I2C, so only the master MCU needs to be flashed.
+!!! note
+    Pando is a split keyboard with an MCU on the master half only. The secondary half uses an I/O expander over I2C, so only the master MCU needs to be flashed.
 
 There are two ways to get the latest Vial firmware for Pando:
 
@@ -102,7 +103,7 @@ Clear the option byte on a fresh chip **before** flashing firmware. This ensures
 
 3. Clone or download the Pando keyboard folder from the [GitHub repo](https://github.com/jyap808/pando).
 
-    Copy the entire `keyboards/jyap808/pando/` folder into `vial-qmk/keyboards/jyap808/pando/`.
+    Copy the entire `firmware/keyboards/jyap808/pando/` folder into `vial-qmk/keyboards/jyap808/pando/`.
 
 4. Compile the Vial firmware:
 

@@ -17,7 +17,11 @@ ergogen/output
 site
 
 # KiCad
+kicad/*/production
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *.kicad_prl
 *-backups
+
+# FreeCAD
+*.FCBak
