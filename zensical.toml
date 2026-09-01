@@ -14,14 +14,8 @@ nav = [
   { "Home" = "index.md" },
   { "Features" = "features.md" },
   { "Build Guide" = [
-    "build/installation.md",
-    "build/keycap-options.md",
+    "build/index.md",
     "build/ibom.md",
-  ] },
-  { "Hardware" = [
-    "hardware/overview.md",
-    "hardware/components.md",
-    "hardware/footprints.md",
   ] },
   { "Firmware and Configuration" = [
     "firmware/index.md",
