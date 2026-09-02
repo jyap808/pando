@@ -2,7 +2,7 @@
 
 Pando uses Vial firmware. Once installed, [Vial](https://get.vial.today/) (the application) is used to configure the keyboard.
 
-Pre-built keyboards from my [Etsy Store](https://www.etsy.com/shop/ReplicantWorks) arrive pre-flashed with firmware and fully PCB-tested, ready to use out of the box.
+Pre-built keyboards from my [Etsy Store](https://www.etsy.com/listing/4567044197/) arrive pre-flashed with firmware and fully PCB-tested, ready to use out of the box.
 
 To flash the keyboard yourself, see [Installing Firmware](installing-firmware.md).
 

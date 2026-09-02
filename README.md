@@ -8,7 +8,7 @@ Pando is a wired 58-key column-staggered split keyboard. It uses an integrated M
 > 📘 The **[Documentation pages](https://jyap808.github.io/pando)** contain a Build and Firmware guide.
 
 > [!TIP]
-> 🚀 Want one? Pre-assembled and PCB-tested kits are available on [Etsy](https://www.etsy.com/shop/ReplicantWorks). Your support helps me keep this project open-source and encourages the development of new models!
+> 🚀 Want one? Pre-assembled and PCB-tested kits are available on [Etsy](https://www.etsy.com/listing/4567044197/). Your support helps me keep this project open-source and encourages the development of new models!
 
 ![FreeCAD](https://img.shields.io/badge/freecad-%23418FDE.svg?style=for-the-badge&logo=freecad&logoColor=white)
 ![KiCad](https://img.shields.io/badge/kicad-%233146C5.svg?style=for-the-badge&logo=kicad&logoColor=white)
