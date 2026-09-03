@@ -1,3 +1,6 @@
+// Copyright 2026 Julian Yap (@jyap808)
+// SPDX-License-Identifier: GPL-2.0-or-later
+
 #include "quantum.h"
 #include "matrix.h"
 #include "pca9555.h"
