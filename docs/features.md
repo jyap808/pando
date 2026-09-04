@@ -14,3 +14,9 @@
 - **Assembly:** Single-sided SMD components for hotplate soldering
 
 The project uses [Ergogen](https://github.com/ergogen/ergogen) for layout generation and [KiCad](https://www.kicad.org/) for schematic/PCB design.
+
+## Layout Template
+
+Print out this [1:1 letter-size template](assets/pando-layout.pdf) and test the layout.
+
+<iframe src="assets/pando-layout.pdf" width="100%" height="800px" style="border: 1px solid rgba(0,0,0,0.2); border-radius: 4px;"></iframe>
