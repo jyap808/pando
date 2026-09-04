@@ -19498,7 +19498,7 @@
 			(uuid "c6fa41d4-9302-4e00-aecc-dce0098579e7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.step"
+		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19670,7 +19670,7 @@
 			(uuid "4a9b1a61-11ca-4e9b-b232-f6afd51a1db5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20001,7 +20001,7 @@
 			(uuid "2b3f4c9b-b97d-4630-9a69-95a8cf06cf55")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20173,7 +20173,7 @@
 			(uuid "b412e3cf-c4e9-410c-8e54-60262b4a1597")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20504,7 +20504,7 @@
 			(uuid "73340fc9-418c-4b4e-947e-9223756a3346")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20835,7 +20835,7 @@
 			(uuid "9ae2888f-fe1a-4a94-aedd-48a2a7efd112")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21007,7 +21007,7 @@
 			(uuid "d9b6ca5f-72a8-4947-9ec7-dfe2e5cde92d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21729,7 +21729,7 @@
 			(uuid "1aee51ed-4a0f-4eae-95bf-6bbb2625ce0b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-32_7x7mm_P0.8mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-32_7x7mm_P0.8mm.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22151,7 +22151,7 @@
 			(uuid "b0aa63ba-7ca9-430f-b286-af7e2b226a31")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/CON_TYPE-C-31-M-12.step"
+		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/CON_TYPE-C-31-M-12.step"
 			(offset
 				(xyz -4.47 -3.65 0.04)
 			)
@@ -22482,7 +22482,7 @@
 			(uuid "7a9ecf48-84ff-4d20-ae35-a4963962e55a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23071,7 +23071,7 @@
 			(uuid "362dfb84-d3bf-4f60-97d1-0f9671494855")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_TL3342.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_TL3342.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23402,7 +23402,7 @@
 			(uuid "78938b50-1863-4896-a140-1070b4556616")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23733,7 +23733,7 @@
 			(uuid "2d3d6351-1ea2-4a5e-a2fa-3471b0f9cd82")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23919,7 +23919,7 @@
 			(uuid "a926ef5a-3061-467b-8b80-fed82165cd6e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24198,7 +24198,7 @@
 			(uuid "2860e70a-c912-4e34-a8fd-d9ddba84b759")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-143.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-143.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24384,7 +24384,7 @@
 			(uuid "3b95fb65-c6ca-4f6d-8f9f-553ffa350b38")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24715,7 +24715,7 @@
 			(uuid "9a209eca-e412-4c16-bed9-4997f6f21c31")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24887,7 +24887,7 @@
 			(uuid "b6680c71-ebc1-498b-bff5-7d58bdc161c1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25218,7 +25218,7 @@
 			(uuid "3f04aaed-8d6c-47e5-a637-e2b5ce376e93")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25549,7 +25549,7 @@
 			(uuid "3f97e902-c784-4068-8851-fc48bd23a299")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25880,7 +25880,7 @@
 			(uuid "17ff693a-9ecf-4040-a6f0-4b4ba49ad6ac")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26302,7 +26302,7 @@
 			(uuid "62877f20-d247-4148-b293-df2c9418a4e5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/CON_TYPE-C-31-M-12.step"
+		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/CON_TYPE-C-31-M-12.step"
 			(offset
 				(xyz -4.47 -3.65 0.04)
 			)
@@ -26474,7 +26474,7 @@
 			(uuid "fd0ff911-c8ef-4015-9867-55478a916df5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26805,7 +26805,7 @@
 			(uuid "e06332b0-01e1-4f7c-bad9-b10e4045f973")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26991,7 +26991,7 @@
 			(uuid "0da50125-a3d8-4639-b9c5-638189a0a447")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27163,7 +27163,7 @@
 			(uuid "610708c6-057c-47fc-95eb-f22b60f880e2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27494,7 +27494,7 @@
 			(uuid "a5b2ec6b-0261-4a09-a1e7-bd6e2bb8de54")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27825,7 +27825,7 @@
 			(uuid "8764c75c-7af4-4a57-9ccb-d81781d1ebb2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28156,7 +28156,7 @@
 			(uuid "bed06e79-07b2-49e8-a2ca-04363765cae6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28487,7 +28487,7 @@
 			(uuid "6e089896-2ddb-4ec6-a373-5bbc50a0006c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28659,7 +28659,7 @@
 			(uuid "0c0b7b28-a654-48af-b148-732781b50bf6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28990,7 +28990,7 @@
 			(uuid "247af09b-37b8-4924-8862-d853049f3a83")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29473,7 +29473,7 @@
 			(uuid "4062f7c9-97f0-4dc8-a3ab-8146c22bfa94")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.step"
+		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29956,7 +29956,7 @@
 			(uuid "fe728411-5778-4615-9dba-5e704a72539c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.step"
+		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30545,7 +30545,7 @@
 			(uuid "4ab03b27-f86e-434b-bcbe-74cfcf503c00")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_TL3342.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_TL3342.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30876,7 +30876,7 @@
 			(uuid "f2b32931-ef5f-49c6-a19c-90fdc6e0fbc7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31155,7 +31155,7 @@
 			(uuid "88af31c3-d03a-47f6-a946-622173c49867")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-143.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-143.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31486,7 +31486,7 @@
 			(uuid "0213df75-f914-49f2-b2aa-941fe3ee9a41")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31658,7 +31658,7 @@
 			(uuid "3f2a0a2e-aa8a-400d-9411-39a3c8e650a5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32068,7 +32068,7 @@
 			(uuid "635c4c1d-33e6-493b-9ea2-54dd7798b029")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-3.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-3.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32551,7 +32551,7 @@
 			(uuid "4984b876-b2aa-42df-9148-6b8290b9c834")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.step"
+		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32882,7 +32882,7 @@
 			(uuid "6b87eb3f-1a9a-49d2-865c-e81d3cc0f273")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33213,7 +33213,7 @@
 			(uuid "2cb38b86-3688-4477-a269-50c2c671e1b2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33385,7 +33385,7 @@
 			(uuid "d9658f7d-8807-400a-b96b-f01e2c056c03")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33716,7 +33716,7 @@
 			(uuid "1e5d152d-7751-495f-9919-44134c94c42d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34047,7 +34047,7 @@
 			(uuid "e7248f9a-7095-45a1-98e0-ab9f2b169fe6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34233,7 +34233,7 @@
 			(uuid "1815b9ff-d60b-40b6-b6e6-1ee81448eeca")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34716,7 +34716,7 @@
 			(uuid "5256b8e8-0781-406c-9533-3b53c8271715")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.step"
+		(model "${KICAD10_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H3.5mm_9774035243.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34902,7 +34902,7 @@
 			(uuid "b0f2f3a2-19fa-4d10-9806-f6db8a0a9186")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35074,7 +35074,7 @@
 			(uuid "4a6aeaa5-2b73-486a-9c6e-d9440b610589")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35405,7 +35405,7 @@
 			(uuid "22757110-4878-417e-86b3-e049ec65f086")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37953,7 +37953,7 @@
 			(uuid "4085a57e-84d3-45c5-b504-9e0d357f4872")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38284,7 +38284,7 @@
 			(uuid "213510ba-0706-45fa-a35f-b75a2009850f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38615,7 +38615,7 @@
 			(uuid "ea99559b-9467-46b3-bfe2-2ffdee26e735")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38787,7 +38787,7 @@
 			(uuid "15d0cb93-494b-41e8-a128-8927454c50ae")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39118,7 +39118,7 @@
 			(uuid "4f4972d7-4d63-49b4-9dc3-406bc17fe0f1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39449,7 +39449,7 @@
 			(uuid "ba2ee8b8-47fa-4273-ba0e-d075ff670c6e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39780,7 +39780,7 @@
 			(uuid "4be3f146-73e8-47db-9d76-51329154f69e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40111,7 +40111,7 @@
 			(uuid "0854f5ac-ef18-485a-b69c-242c0ce32f02")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.stpZ"
 			(offset
 				(xyz 0 0 0)
 			)

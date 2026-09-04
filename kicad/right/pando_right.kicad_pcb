@@ -19618,7 +19618,7 @@
 			(uuid "400910ae-a9eb-47d6-b75b-962abef8fa22")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/CON_TYPE-C-31-M-12.step"
+		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/CON_TYPE-C-31-M-12.step"
 			(offset
 				(xyz -4.47 -3.65 0.04)
 			)
