@@ -8,7 +8,7 @@
     - Consolidated single-supply core (VDD) with a modern power layout, reducing decoupling capacitors from 6 to 1
     - Streamlined LQFP-32 package instead of LQFP-48, keeping the same 7x7 mm body with a larger 0.875 mm pin pitch for easier soldering
     - Active ST support, keeping the design future-proof
-- **IO expander:** PCA9555
+- **IO expander:** PCA9555, communicating with the MCU over I²C
 - **Split communication:** USB-C with ESD protection on all ports
 - **Switches:** Hotswap sockets
 - **Assembly:** Single-sided SMD components for hotplate soldering
