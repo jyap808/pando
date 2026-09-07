@@ -22,6 +22,7 @@ nav = [
     "firmware/index.md",
     "firmware/installing-firmware.md",
   ] },
+  { "Gallery" = "gallery/index.md" },
 ]
 
 [project.theme]

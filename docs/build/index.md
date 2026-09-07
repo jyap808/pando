@@ -86,6 +86,8 @@ You can add keycaps to suit the layout that you deem optimal. This may come thro
 
 One of the thumb keys is designed to take a 1.25U key but you can also use a 1U key.
 
+More Pando build examples can be found in the [Gallery](../gallery/).
+
 A more extensive gallery of keycap options can be found in the [Pando58 Gallery](https://jyap808.github.io/pando58/gallery).
 
 
