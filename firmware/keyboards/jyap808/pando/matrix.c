@@ -25,15 +25,15 @@ static void right_half_init(void) {
     pca9555_set_output(RIGHT_HALF, RIGHT_ROWS_PORT, ALL_HIGH);
 }
 
-// On STM32G0B1, PA8 is UCPD1_CC1 and its internal dead-battery pull-down is
-// enabled by default after reset. This fights GPIO usage of the pin, so the
-// ST-recommended fix for using PA8 as a normal GPIO is to set the UCPD1 strobe
-// bit in SYSCFG_CFGR1, which disconnects the internal pull-down. UCPD2's pins
-// (PD0/PD2) aren't exposed on the 32-pin package but the strobe bit is set
-// anyway for completeness. The SYSCFG clock is already enabled by ChibiOS HAL
-// init at this point. UCPD is not used by this keyboard.
 void keyboard_pre_init_kb(void) {
+    // Disable the PD peripheral, pins (PA8, PB15, PD0, PD2) are used in the matrix:
     SYSCFG->CFGR1 |= SYSCFG_CFGR1_UCPD1_STROBE | SYSCFG_CFGR1_UCPD2_STROBE;
+
+    // Mac silicon (M3/M4 confirmed) workaround: pulse D+ low to force re-enumeration.
+    usbDisconnectBus(&USBD1);
+    wait_ms(100);
+    usbConnectBus(&USBD1);
+
     keyboard_pre_init_user();
 }
 

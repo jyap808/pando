@@ -7,7 +7,7 @@
     "usb": {
         "vid": "0x4A59",
         "pid": "0x3538",
-        "device_version": "1.1.0"
+        "device_version": "1.2.0"
     },
     "features": {
         "bootmagic": true,
