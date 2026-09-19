@@ -10,6 +10,9 @@ There are two ways to get the latest Vial firmware for Pando:
 
 ## Prerequisites: Enable the Boot Button (Legacy Boot Mode)
 
+!!! note
+    This step is not required for pre-built keyboards from my [Etsy Store](https://www.etsy.com/listing/4567044197/) as it has already been completed.
+
 The STM32G0 series handles booting differently from older STM32 parts. Booting is controlled by a software configuration bit called `nBOOT_SEL` in the Option Bytes rather than purely by hardware.
 
 By default, `nBOOT_SEL` is set to `1`, which tells the MCU to **ignore the physical BOOT0 pin** entirely. Instead it uses an **Empty Check** mechanism: a blank chip automatically enters DFU mode, but once code is flashed, it always boots straight into your firmware — ignoring BOOT0 even if it's held HIGH.
