@@ -3,6 +3,9 @@
 {
   packages = [
     pkgs.zensical
+    (pkgs.python3.withPackages (ps: [
+      ps.ezdxf
+    ]))
   ];
 
   scripts.gen.exec = "cd $DEVENV_ROOT/ergogen && ergogen .";
