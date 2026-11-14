@@ -20,3 +20,7 @@ Open [Vial](https://get.vial.today/) to configure the keyboard. The Pando should
 ![Vial application showing Pando keyboard configuration](../assets/images/vial_configure_pando.png)
 
 Vial allows you to remap keys, create layers, and configure macros for your Pando keyboard.
+
+## Alternative firmware - RMK
+
+QMK/Vial is the official Pando firmware and is what assembled keyboards ship with. An optional [RMK](https://rmk.rs/)-based firmware, written in Rust, is also available at [jyap808/pando-rmk](https://github.com/jyap808/pando-rmk); it is not the official firmware and is not pre-installed.
